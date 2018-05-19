@@ -27,7 +27,7 @@ class BrowserRequest():
 class ServerSocket():
     """Simplified interface for interacting with a web server socket"""
 
-    def __init__(self, host='', port=80, buffer_size=1024, max_queued_connections=5):
+    def __init__(self, host='', port=80, buffer_size=1024, max_queued_connections=10):
         self._connection = None
         self._socket = None
         self.host = host
